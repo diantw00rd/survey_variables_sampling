@@ -10,7 +10,7 @@ The stated preference survey presents hypothetical scenarios to EV users, explor
 
 2. Comparisons between the two methods.
 
-3. Algorithmic explanations of how these methods work with the specified variables. Please find the flowcharts for both methods in flowcharts.md file.
+3. Algorithmic explanations of how these methods work with the specified variables. Please find the flowcharts for both methods in flowcharts.md / flowchart output.png files. Note: to run flowchart.md open Mermaid Live Web Editor. 
 
 # Parameters for the Survey
 
