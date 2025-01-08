@@ -1,4 +1,6 @@
-graph TD
+
+
+    graph TD
     subgraph LHS ["Latin Hypercube Sampling Algorithm"]
         A1[Start LHS] --> B1[Define 7 variables:<br/>Price, SoC, Distance, etc.]
         B1 --> C1[Create n_samples × 7 matrix<br/>with values between 0-1]
