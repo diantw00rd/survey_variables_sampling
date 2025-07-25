@@ -12,9 +12,11 @@ The stated preference survey presents hypothetical scenarios to EV users, explor
 
 3. Algorithmic explanations of how these methods work with the specified variables. Please find the flowcharts for both methods in flowcharts.md / flowchart output.png files. Note: to run flowchart.md open Mermaid Live Web Editor. 
 
-# Parameters for the Survey
+# Survey Implementation in Qualtrics
+The final survey is conducted using Qualtrics, which supports embedded JavaScript. While scenario sampling was initially guided by LHS and FFD methods, the final 16 survey scenarios were generated using direct randomization within Qualtrics for more practical deployment. To allow dynamic and varied presentations, variable levels were adapted, simplified, and randomized using Qualtrics's built-in JavaScript functions.
 
-The following parameters and their respective levels are considered in this project:
+# Parameters for the Survey
+The following parameters and their respective levels are considered in this project in Survey_sampling.ipynb:
 | Parameter               | Levels                                                             |
 |-------------------------|--------------------------------------------------------------------|
 | Price                  | FREE, $0.12/kWh, $0.45/kWh, $1.5/kWh, $5/kWh                      |
@@ -25,6 +27,19 @@ The following parameters and their respective levels are considered in this proj
 | Location               | Home, Workplace/School, Shopping, Daycare, Other                 |
 | Time of Day            | Morning, Noon, Afternoon, Evening, Late evening/Night            |
 
+# Final Parameters (used in Qualtrics) 
+| Parameter               | Levels                                         |
+|-------------------------|-----------------------------------------------|
+| **Price**               | $0, $0.06/kWh, $0.12/kWh, $0.30/kWh, $0.45/kWh |
+| **State of Charge**     | 25%, 40%, 55%, 70%                             |
+| **Remaining Distance**  | 5 km, 15 km, 35 km, 100 km                     |
+| **Stop Duration**       | 15 min, 30 min, 1 hr, 2 hr, 4 hr               |
+| **Charger Power Level** | 11 kW, 50 kW                                   |
+
+
+# Example Output
+A dynamic example of a generated scenario in Qualtrics is shown below:
+![Example Scenario](example.png)
 
 # Methods Used
 
